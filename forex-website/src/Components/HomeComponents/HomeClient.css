@@ -1,0 +1,75 @@
+@import url(../../index.css);
+
+.HomeClient{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-block: 50px;
+    position: relative;
+    background: url(../../images/HappyLads.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.HomeClient::before{
+    position: absolute;
+    content:"";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(61, 41, 3, 0.842);
+    filter: brightness(80%);
+}.HomeClient > div:nth-child(1){
+    display: flex;
+    font-size: 50px;
+    padding-bottom: 30px;
+}.HomeClient > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}.HomeClient > div:nth-child(2) > div > span{
+   font-size: 30px;
+   color: #f0ad4e;
+}
+.HomeClient > div:nth-child(2) p{
+    font-size: 22px;
+    font-weight: 800;
+    font-family: var(--font-Inconsolata);
+}.HomeClient > div:nth-child(2) h3{
+    font-family: var(--font-Inconsolata);
+    text-transform: capitalize;
+    font-size: 15.5px;
+    padding-top: 10px;
+}.HomeClient > div:nth-child(2) h4{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: var(--font-poppin);
+    font-weight: 600;
+}.HomeClient > div:nth-child(2) > h2{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:780px) {
+    .HomeClient{
+        flex-direction: row;
+        gap: 20px;
+    }.HomeClient > div:nth-child(1){
+        width: 30%;
+        font-size: 80px;
+    }.HomeClient> div:nth-child(2){
+        width: 70%;
+    }
+}
+@media (min-width:820px) {
+    .HomeClient> div:nth-child(2) p{
+        font-size: 30px;
+    }
+}
+@media (min-width:1028px) {
+    .HomeClient{
+        padding-block: 100px;
+        background-attachment: fixed;
+    }
+}

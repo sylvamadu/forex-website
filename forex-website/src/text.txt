@@ -1,0 +1,49 @@
+ <div className='HomeAbout'>
+        <div>
+            <h3 className="title">about</h3>
+            <h2 className="heading">At David Williams, we're dedicated to revolutionizing the way traders approach the financial markets.</h2>
+            <p className="text">With years of experience and a passion for helping others succeed, David Williams leads our team of expert traders and analysts.</p>
+            <div>
+                <p>read more</p>
+                <span><IoIosArrowForward /></span>
+            </div>
+        </div>
+        <div>
+            <img src={bossMan} 
+            alt="boss Man" />
+        </div>
+    </div>
+
+
+
+
+    .hero > div:nth-child(3) >div{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    margin-inline: auto;
+    font-family: var(--font-space-mono);
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding-block: 20px;
+    gap: 10px;
+    cursor: pointer;
+    background-color: var(--darkLight);
+}
+
+.hero > div:nth-child(3) >div h3{
+    /* border: 1px solid grey; */
+    display: flex;
+  align-items: center; 
+   text-align: left;
+   /* max-width: 70%;  */
+}
+
+
+
+
+
+https://github.com/Delyte-01/forex-site.git

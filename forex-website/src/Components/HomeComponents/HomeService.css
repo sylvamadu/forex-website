@@ -1,0 +1,104 @@
+@import url(../../index.css);
+
+
+.HomeService{
+    padding-block: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #F0F5FE;
+}
+.HomeService > div{
+    /* border: 1px solid grey; */
+}
+.HomeService > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: capitalize;
+}.HomeService > div:nth-child(1) h3{
+    opacity: .7;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: var(--font-poppins);
+    font-weight: 600;
+}.HomeService > div:nth-child(1) h2{
+    position: relative;
+    font-size: 25px;
+}.HomeService > div:nth-child(1) h2::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    opacity: .6;
+    height: .5px;
+    background-color: grey;
+    /* top: 0; */
+    left: 0;
+    bottom: 0;
+    margin-bottom: -13px;
+}.HomeService > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}.HomeService > div:nth-child(2) > div{
+    display: flex;
+    flex-direction: column;
+}.HomeService > div:nth-child(2) > div h3{
+    font-family: var(--font-space-mono);
+    font-size: 14.9px;
+    opacity: .8;
+}.HomeService > div:nth-child(2) > div h2{
+    font-size: 22px;
+    font-family: var(--font-Inconsolata);
+    font-weight: 900;
+    margin-bottom: 8px;
+}.HomeService > div:nth-child(2) > div > p{
+    font-family: var(--font-space-mono);
+    line-height: 1.4rem;
+    font-size: 14.5px;
+    font-weight: 800;
+    opacity: .8;
+    margin-bottom: 10px;
+}.HomeService > div:nth-child(2) > div> div{
+    display: flex;
+    align-items: center;gap: 5px;
+    color: var(--darkBlue);
+    font-weight: 900;
+    /* font-family: var(--font-Inconsolata); */
+}.HomeService > div:nth-child(2) > div> div span{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}.HomeService > div:nth-child(2) > div> div p{
+    text-transform: capitalize;
+    font-size: 18px;
+    cursor: pointer;
+}
+@media (min-width:580px) {
+    .HomeService > div:nth-child(1) h2{
+        font-size: 40px;
+    }
+}
+@media (min-width:800px) {
+    .HomeService > div:nth-child(2) {
+        flex-direction: row;
+        gap: 30px;
+    }.HomeService > div:nth-child(2) > div h2{
+        margin-top: 14px;
+    }
+}
+@media (min-width:1028px){
+    .HomeService > div:nth-child(1){
+        padding-block: 70px;
+    }
+    .HomeService > div:nth-child(2) {
+        padding-block: 50px;
+    }
+}
+@media (min-width:1280px) {
+    .HomeService{
+        clip-path: polygon(53% 1%, 100% 12%, 100% 95%, 0 100%, 0 0);
+    }
+}

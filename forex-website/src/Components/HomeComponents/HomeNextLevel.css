@@ -1,0 +1,101 @@
+@import url(../../index.css);
+
+.HomeNextLevel{
+    display: flex;
+    flex-direction: column;
+    padding-block: 80px;
+    gap: 20px;
+    background-color:#004cd6;
+    color: white;
+}
+.HomeNextLevel > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding-block: 40px;
+}.HomeNextLevel > div:nth-child(1) h1{
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: 700;
+    font-family: var(--font-poppins);
+    position: relative;
+    margin-bottom: 20px;
+}
+.HomeNextLevel > div:nth-child(1) h1::before{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 20%;
+    bottom: -14px;
+    inset-inline: 39%;
+    background-color: white;
+    /* padding-bottom: 10px; */
+    /* margin-bottom: -10px; */
+}.HomeNextLevel > div:nth-child(1) p{
+    font-family: var(--font-space-mono);
+    font-weight: 600;
+    padding-bottom: 20px;
+}.HomeNextLevel > div:nth-child(1) > div {
+    display: flex;
+    cursor: pointer;
+    background-color: var(--mayBeGreen);
+    justify-items: center;
+    padding: 16px 20px;
+    color: black;
+}.HomeNextLevel > div:nth-child(1)  >div span{
+    display: flex;
+    align-items: center;
+}.HomeNextLevel > div:nth-child(1) > div h2{
+    font-size: 19px;
+    text-transform: capitalize;
+    font-family: var(--font-space-mono);
+    font-weight: 900;
+}
+@media (min-width:640px) {
+    .HomeNextLevel > div:nth-child(1) h1{
+        font-size: 34px;
+        line-height: 2.6rem;
+    }
+}
+@media (min-width:780px) {
+    .HomeNextLevel{
+        flex-direction: row;
+    }.HomeNextLevel > div{
+        width: 50%;
+        justify-items: flex-start;
+    }.HomeNextLevel > div:nth-child(1) h1{
+        text-align: left;
+        /* align-items: flex-start; */
+        /* margin-left: 10px; */
+    }
+    .HomeNextLevel > div:nth-child(1) h1::before{
+        left: 4px;
+        width: 20%;
+        margin-bottom: -5px;
+    }.HomeNextLevel > div:nth-child(1){
+        /* justify-items: f; */
+    }.HomeNextLevel > div:nth-child(1) > div{
+
+
+        margin-right: auto;
+    }.HomeNextLevel > div:nth-child(1) p{
+        text-align: left;
+        padding-right: 20px;
+    }
+}@media (min-width:1028px){
+     .HomeNextLevel > div:nth-child(2){
+        height: 70vh;
+     }
+}
+@media (min-width:1300px) {
+    .HomeNextLevel > div:nth-child(1) h1{
+        font-size: 48px;
+        font-weight: 700;
+        width: 100%;
+        /* border: 1px solid grey; */
+        line-height: 3.5rem;
+    }
+}

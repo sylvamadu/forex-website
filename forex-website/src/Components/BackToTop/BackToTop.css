@@ -1,0 +1,18 @@
+@import url(../../index.css);
+
+
+.buttonStyle{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    padding: 8px 10px ;
+    border: none;
+    border-Radius: 80%;
+     background-color: var(--mediumDark);
+    color: white;
+    cursor: pointer;
+    z-index:77;
+    display: flex;
+    font-size: 28px;
+    transition: all , .5 1s forward ease-in-out;
+}

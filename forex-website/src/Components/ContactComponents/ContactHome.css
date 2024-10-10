@@ -1,0 +1,115 @@
+@import url(../../index.css);
+
+.contactHome{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    gap: 20px;
+}
+.contactHome > div{
+    /* border: 1px solid grey; */
+   
+}
+.contactHome > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactHome > div:nth-child(1) h2{
+    text-transform: capitalize;
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    /* font-style: italic; */
+    font-size: 26px;
+}
+.contactHome > div:nth-child(1) > div:nth-child(2){
+    display: flex;
+    justify-content: flex-start;
+    /* padding-inline: 20px; */
+    align-items: center;
+    gap: 80px;
+    /* background-color: green; */
+}.contactHome > div:nth-child(1) > div:nth-child(2) > div >h3{
+    font-family: var(--font-space-mono);
+    text-transform: capitalize;
+}.contactHome > div:nth-child(1) > div:nth-child(2) > div >p{
+    font-style: italic;
+    font-family: var(--font-Inconsolata);
+}.contactHome > div:nth-child(1) > div:nth-child(3) > h3{
+    text-transform: capitalize;
+    font-family: var(--font-space-mono);
+}.contactHome > div:nth-child(1) > div:nth-child(3) > p{
+    font-family: var(--font-Inconsolata);
+    font-style: italic;
+}.contactHome > div:nth-child(1) > div:nth-child(4){
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: var(--font-space-mono);
+    font-style: italic;
+    font-weight: 900;
+}.contactHome > div:nth-child(1) > div:nth-child(4) > span{
+    display: flex;
+    font-size: 20px;
+    color: blue;
+    /* fill: aqua; */
+    align-items: center;
+}.contactHome > div:nth-child(1) > div{
+    padding-block: 5px;
+}
+.contactHome > div:nth-child(2) form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contactHome > div:nth-child(2) form :is(input,textarea){
+    padding: 10px 20px;
+    font-size: 15px;
+    /* box-shadow: .5px 1px 1px hsla(216, 6%, 84%, 0.7); */
+    filter: drop-shadow(
+        1px 2px 3px hsla(226, 10%, 74%, 0.623)
+      ) ;
+    /* box-shadow: 1.2px 2.4px 2.4px  hsla(0, 11%, 90%, 0.8);
+    box-shadow: 2.4px 2.4px 1.2px hsla(0, 11%, 90%, 0.8) ; */
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    font-family: var(--font-space-mono);
+}.contactHome > div:nth-child(2) form button{
+    display: flex;
+    padding: 12px 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family: var(--font-space-mono);
+    font-weight: 900;
+    background-color: var(--mayBeGreen);
+    opacity: .9;
+    border: none;
+    transition: opacity,.5s ease-in-out;
+    cursor: pointer;
+    /* width: 20%; */
+}.contactHome > div:nth-child(2) form button:hover{
+    opacity: 1;
+}.contactHome > div:nth-child(2) form textarea{
+    height: 170px;
+}.contactHome > div:nth-child(2) form :is(input,textarea):focus{
+    /* border: .1px solid var(--darkBlue); */
+    filter: drop-shadow(
+        1px 2px 3px hsla(226, 79%, 17%, 0.623)
+      ) ;
+    /* opacity: .5; */
+}
+
+@media (min-width:700px) {
+    .contactHome > div:nth-child(1) h2{
+        font-size: 40px;
+    }
+}
+@media (min-width:800px) {
+    .contactHome{
+        flex-direction: row;
+    }.contactHome > div{
+        width: 50%;
+    }
+}

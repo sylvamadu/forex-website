@@ -1,0 +1,87 @@
+@import url(../../index.css);
+
+
+.aboutMission{
+    padding-block: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.aboutMission > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}.aboutMission > div:nth-child(1) h3{
+    color: blue;
+    opacity: .8;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: var(--font-Inconsolata);
+}.aboutMission > div:nth-child(1) h1{
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 26px;
+}.aboutMission > div:nth-child(1)::before{
+    position: absolute;
+    content: "";
+    /* margin-bottom: -20px; */
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0px;
+    opacity: .4;
+    background-color: grey;
+}.aboutMission > div:nth-child(1){
+    padding-bottom: 40px;
+}
+.aboutMission > div:nth-child(2) > div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-block: 20px;
+}.aboutMission > div:nth-child(2) > div:nth-child(1) h2{
+    font-size: 21px;
+    font-family: var(--font-Inconsolata);
+    font-weight: 900;
+    opacity: .9;
+}.aboutMission > div:nth-child(2) > div:nth-child(1) :is(p,span){
+    padding-bottom: 10px;
+    font-size: 15px;
+    opacity: .9;
+}.aboutMission > div:nth-child(2) > div:nth-child(2){
+    height:40vh;
+}
+@media (min-width:630px) {
+    .aboutMission > div:nth-child(1) h1{
+        font-size: 32px;
+    } 
+}
+@media (min-width:780px) {
+    .aboutMission > div:nth-child(2) {
+        flex-direction: row;
+        gap: 28px;
+    }
+    .aboutMission > div:nth-child(2) > div{
+        width: 50%;
+        /* height: 60vh; */
+    }.aboutMission > div:nth-child(2) > div:nth-child(2){
+        /* height: 70vh; */
+        /* aspect-ratio: 4/3; */
+        display: flex;
+        border: 1px solid grey;
+        height: 50vh;
+    }
+    .aboutMission{
+        padding-block: 80px;
+    }
+}
+@media (min-width:1024px) {
+    .aboutMission > div:nth-child(1) h1{
+        font-size: 45px;
+    }.aboutMission > div:nth-child(2) > div:nth-child(1) h2{
+        opacity: 1;
+        line-height: 2.2rem;
+        font-size: 29px;
+    }
+}

@@ -1,0 +1,56 @@
+@import url(../../index.css);
+
+
+
+.heroB{
+    /* background-color: yellowgreen; */
+    position: relative;
+    padding-block:180px ;
+    top: -100px;
+    width: 100%;
+    z-index: 1;
+    margin-top: 0;
+ 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.heroB::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(1, 24, 15, 0.432);
+    z-index: -1;
+}.heroB h1{
+    text-transform: capitalize;
+    font-family: var(--font-poppins);
+    font-size: 30px;
+    position: relative;
+    padding-inline: 20px;
+}.heroB h1::before{
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background-color: white;
+
+}
+@media (min-width:560px) {
+    .heroB h1{
+        font-size: 46px;
+    }  .heroB h1::before{
+        width: 120px;
+    }
+} @media (min-width:1280px) {
+    .heroB h1{
+        font-size: 60px;
+        /* padding-bottom: 50px; */
+        margin-block: 40px;
+    }
+}

@@ -1,0 +1,82 @@
+@import url(../../index.css);
+
+
+.serviceHome{
+    padding-bottom: 30px;
+}
+.serviceHome > div{
+    display: flex;
+    flex-direction: column;
+}
+.serviceHome > div > div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-bottom: 30px;
+    /* gap: 20px; */
+}.serviceHome > div > div::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    background-color: grey;
+    opacity: .3;
+    bottom: 17px;
+}
+
+.serviceHome > div > div h3{
+    color: blue;
+    font-size: 16px;
+    opacity: .8;
+    font-family: var(--font-Inconsolata);
+}.serviceHome > div > div h2{
+    font-family: var(--font-space-mono);
+    /* border: 1px solid grey; */
+    font-size: 20px;
+    font-weight: 900;
+}.serviceHome > div > div p{
+    font-size: 14.9px;
+    opacity: .8;
+    font-family: var(--font-poppins);
+}.serviceHome > div > div > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}.serviceHome > div > div > div:nth-child(1){
+    padding-block: 30px;
+    display: flex;
+    transition: filter,.5s ease-in-out;
+}.serviceHome > div > div > div:nth-child(1):hover{
+    filter: grayscale(100%);
+    cursor:grab;
+}
+@media (min-width:640px) {
+    .serviceHome > div > div h2{
+        font-size: 30px;
+    }.serviceHome > div > div > div:nth-child(1){
+        height: 48vh;
+    }
+}
+@media (min-width:780px) {
+   .serviceHome > div > :is(.even,){
+    /* background-color: green; */
+    flex-direction: row;
+   } .serviceHome > div >div >div{
+    width: 50%;
+   }.serviceHome > div > :is(:not(.even)){
+    flex-direction: row-reverse;
+   } .serviceHome > div >div >div:nth-child(1){
+    height: 45vh;
+   }.serviceHome > div > div{
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+   }
+}
+
+@media (min-width:1580px) {
+    .serviceHome > div >div >div:nth-child(1){
+        height: 38vh;
+       }
+}
